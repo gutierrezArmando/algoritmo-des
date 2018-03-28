@@ -2,14 +2,16 @@
 #include "tablas.h"
 #include "funciones.h"
 #define ENTER 13
+#define GET_INDEX_M(valor)(valor/8)
 
-int main() {
+
+int main()
+{
     M[0]=0xAB;
-    printf("%c",getBit(M[0], PC_1[1][7])?'1':'0');
-    return 0;
-}
 
-void esperaEnter() {
-    printf("\nPresiona enter para continuar...");
-    while (getch()!=ENTER);
+    printf("%d", GET_INDEX_M(23));
+    // printf("%c",GET_BIT(M[0], valorPC1(2,7))?'1':'0');
+    // printf("%c",GET_BIT(M[0], VALOR_PC1(2,7))?'1':'0');
+    // printf("%c",GET_BIT(M[0], VALOR_PC1(PC_1,2,7))?'1':'0');
+    return 0;
 }
