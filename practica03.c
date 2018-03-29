@@ -1,16 +1,25 @@
 #include <stdio.h>
 #include "tablas.h"
 #include "funciones.h"
-#define ENTER 13
+
+int getBitFromM(unsigned char M[], int posicion);
 
 int main()
 {
-    M[0]=0xAB;
-    printf("%d", valorPC1(2,7) );
-    // printf("%d", INDEX_FOR_M(23));
-    // printByte(M[0]);
-    // printf("%c",GET_BIT(M[0], valorPC1(2,7))?'1':'0');
-    // printf("%c",GET_BIT(M[0], VALOR_PC1(2,7))?'1':'0');
-    // printf("%c",GET_BIT(M[0], VALOR_PC1(PC_1,2,7))?'1':'0');
+    PC_1 pc1;
+    pc1 = newPC1();
+    int i=0, j=0;
+    unsigned char M[8]={0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF};
+    unsigned char K[8]={0x13, 0x34, 0x57, 0x79, 0x9B, 0xBC, 0xDF, 0xF1};
+    while(i<pc1.filas)
+    {
+        j=0;
+        while (j<pc1.columnas) {
+            printf("%d", GETBITVAL_M(K, GET_PC_VALOR(pc1,i,j)));
+            j++;
+        }
+        printf(" ");
+        i++;
+    }
     return 0;
 }

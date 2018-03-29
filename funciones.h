@@ -1,8 +1,12 @@
 // Obtiene el valor del bit de la posicion, del registro
-#define GET_BIT(registro, posicion)(registro&(0x80>>(posicion-1)))
+#define GETBITVAL_REG(registro, posicion)((registro&(0x80>>(posicion-1)))?1:0)
 
 // Espera un valor (1:64) y lo divide entre 8, para localizar la posicion
 // del byte con el que se debe trabajar
-#define INDEX_FOR_M(valor)(valor/8)
+#define FIND_M_INDEX(numBit)((numBit-1)/8)
 
-void printByte(unsigned char byte);
+// Obtiene el valor de la tabla pc, correspondiente a la fila y columa
+#define GET_PC_VALOR(pc, fila, columna)(pc.val[fila][columna])
+
+// Obtiene el valor del numero de bit del total de los bits necesarios por M
+#define GETBITVAL_M(m, numBit)(GETBITVAL_REG(m[FIND_M_INDEX(numBit)],(numBit-(FIND_M_INDEX(numBit)*8))))
