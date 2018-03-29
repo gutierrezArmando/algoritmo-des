@@ -1,6 +1,6 @@
-#define M_LENGTH 8
-#define K_LENGTH 7
-#define GET_INDEX_M(valor)(valor/8)
+#define LENGTH_M 8
+#define LENGTH_K 7
+
 
 const unsigned int PC_1[7][8] = {
     {57, 49, 41, 33, 25, 17, 9, 1},
@@ -23,6 +23,4 @@ const unsigned int PC_2[6][8] = {
 
 unsigned char M[8]={0};
 
-int valorPC1(int fila, int columna){
-    return PC_1[fila][columna];
-}
+int valorPC1(int fila, int columna);
