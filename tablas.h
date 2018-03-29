@@ -1,6 +1,7 @@
 #define LENGTH_M 8
 #define LENGTH_K 7
-
+#define FILAS_PC1 7
+#define COLUMNAS_PC1 8
 
 const unsigned int PC_1[7][8] = {
     {57, 49, 41, 33, 25, 17, 9, 1},
