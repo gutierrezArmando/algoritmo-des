@@ -10,3 +10,6 @@
 
 // Obtiene el valor del numero de bit del total de los bits necesarios por M
 #define GETBITVAL_M(m, numBit)(GETBITVAL_REG(m[FIND_M_INDEX(numBit)],(numBit-(FIND_M_INDEX(numBit)*8))))
+
+
+void putBitOnReg(unsigned char *registro, int valor, int numBit);
