@@ -36,6 +36,7 @@ void rol(unsigned char *C){
     C[index]|=acarreoFinal;
 }
 
+/*Funcion que rota un arreglo la cantidad de veces requeridas*/
 void rolN(unsigned char *c, int cantidad)
 {
     while(cantidad--)
