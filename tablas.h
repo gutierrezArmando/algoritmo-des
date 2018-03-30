@@ -4,7 +4,15 @@ typedef struct {
     unsigned char columnas;
 }PC_1;
 
-PC_1 newPC1(void);
+PC_1 newIP(void);
+
+typedef struct {
+    unsigned char val[8][8];
+    unsigned char filas;
+    unsigned char columnas;
+}IP;
+
+IP newPC1(void);
 
 typedef struct {
     unsigned char val[6][8];
