@@ -1,3 +1,2 @@
-C:\Users\Armando\AppData\Local\Temp\ccucxBIp.o:practica03.c:(.text+0x16): undefined reference to `newPC1'
-C:\Users\Armando\AppData\Local\Temp\ccucxBIp.o:practica03.c:(.text+0x22): undefined reference to `newPC2'
+C:\Users\Armando\AppData\Local\Temp\cceDkPGB.o:practica03.c:(.text+0x1b): undefined reference to `newPC1'
 collect2.exe: error: ld returned 1 exit status

@@ -1,3 +1,5 @@
+
+
 // Obtiene el valor del bit de la posicion, del registro
 #define GETBITVAL_REG(registro, posicion)((registro&(0x80>>(posicion-1)))?1:0)
 
@@ -11,5 +13,12 @@
 // Obtiene el valor del numero de bit del total de los bits necesarios por M
 #define GETBITVAL_M(m, numBit)(GETBITVAL_REG(m[FIND_M_INDEX(numBit)],(numBit-(FIND_M_INDEX(numBit)*8))))
 
-
 void putBitOnReg(unsigned char *registro, int valor, int numBit);
+
+void printBin(unsigned char registro);
+
+void printC(unsigned char *C);
+
+void rol(unsigned char *C);
+
+void rolN(unsigned char *c, int cantidad);
