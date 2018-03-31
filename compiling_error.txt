@@ -1,2 +1,6 @@
-C:\Users\Armando\AppData\Local\Temp\cceDkPGB.o:practica03.c:(.text+0x1b): undefined reference to `newPC1'
+C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x18): undefined reference to `newPC1'
+C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0xf6): undefined reference to `printC'
+C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x107): undefined reference to `rolN'
+C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x11d): undefined reference to `printC'
+C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x22e): undefined reference to `putBitOnReg'
 collect2.exe: error: ld returned 1 exit status
