@@ -21,9 +21,3 @@ typedef struct {
 }PC_2;
 
 PC_2 newPC2(void);
-
-typedef union{
-    PC_1 pc1;
-    PC_2 pc2;
-    IP ip;
-}tablaPermutacion;
