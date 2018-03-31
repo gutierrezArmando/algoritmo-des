@@ -14,10 +14,11 @@ void printBin(unsigned char registro)
         printf("%d",GETBITVAL_REG(registro, i++));
 }
 
-void printC(unsigned char *C)
+// void printC(unsigned char *C)
+void printArray(unsigned char *C, int cantidadRegistros)
 {
     unsigned char index=0;
-    while (index < 7) {
+    while (index < cantidadRegistros) {
         printBin(C[index++]);
         printf(" ");
     }

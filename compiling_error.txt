@@ -1,6 +1,5 @@
-C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x18): undefined reference to `newPC1'
-C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0xf6): undefined reference to `printC'
-C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x107): undefined reference to `rolN'
-C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x11d): undefined reference to `printC'
-C:\Users\Armando\AppData\Local\Temp\cccvFwk3.o:practica03.c:(.text+0x22e): undefined reference to `putBitOnReg'
+C:\Users\Armando\AppData\Local\Temp\cccHfleq.o:practica03.c:(.text+0x1b): undefined reference to `newIP'
+C:\Users\Armando\AppData\Local\Temp\cccHfleq.o:practica03.c:(.text+0x27): undefined reference to `newPC1'
+C:\Users\Armando\AppData\Local\Temp\cccHfleq.o:practica03.c:(.text+0xda): undefined reference to `printArray'
+C:\Users\Armando\AppData\Local\Temp\cccHfleq.o:practica03.c:(.text+0x1eb): undefined reference to `putBitOnReg'
 collect2.exe: error: ld returned 1 exit status

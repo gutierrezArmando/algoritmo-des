@@ -17,7 +17,8 @@ void putBitOnReg(unsigned char *registro, int valor, int numBit);
 
 void printBin(unsigned char registro);
 
-void printC(unsigned char *C);
+void printArray(unsigned char *C, int cantidadRegistros);
+// void printC(unsigned char *C);
 
 void rol(unsigned char *C);
 
